@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /*background-color: #edf0f1;*/
+}
+
+body{
+  height: 100%;
+  background-color: #e3ecf0;
+}
+
+li, a, .med_button{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.hero p{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  color: #ecf0f1;
+  text-decoration: none;
+}
+
+.hero{
+  min-height: 100%;
+  position: relative;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(5, 6, 32, 0.7);
+  overflow: hidden;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background-image: url(pictures/iceland.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(10px);
+  transform: scale(1.2);
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.logo a{
+  cursor: pointer;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+}
+
+.logo a:hover{
+  color: #13B3D0;
+}
+
+.nav_links{
+  list-style-type: none;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.nav_links li a{
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover{
+  color: #13B3D0;
+}
+
+.med_button{
+  width: 111px;
+  height: 36px;
+  background-color: transparent;
+  border: 1px solid #ecf0f1;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.med_button:hover{
+  border: 1px solid #13B3D0;
+  background-color: #13B3D0;
+}
+
+.mobile_menu{
+    display: none;
+  }
+  
+.hamburger{
+position: absolute;
+width: 35px;
+height: 30px;
+top: 14px;
+right: 10%;
+z-index: 5;
+cursor: pointer;
+}
+  
+.hamburger div{
+position: relative;
+width: 35px;
+height: 3px;
+border-radius: 3px;
+background-color: #ecf0f1;
+margin-top: 10px;
+transition: all 0.3s ease-in-out;
+}
+
+#toggle{
+display: none;
+}
+
+#toggle:checked + .hamburger .hamburger_top{
+transform: rotate(-45deg);
+margin-top: 17.5px; /* half the size of hamburger height*/
+}
+
+#toggle:checked + .hamburger .hamburger_meat{
+transform: rotate(45deg);
+margin-top: -3px; /* Negative value of hamburger div height*/
+}
+
+#toggle:checked + .hamburger .hamburger_bottom{
+transform: scale(0);
+}
+
+#toggle:checked + .hamburger + .hamburger_nav{
+top: 0;
+}
+
+.hamburger_nav{
+position: fixed;
+z-index: 4;
+width: 100%;
+height: 100%;
+background-color: #050620;
+top: -100%;
+left: 0;
+right: 0;
+bottom: 0;
+overflow: hidden;
+transition: all 0.3s ease-in-out;
+}
+
+.hamburger_nav .hamburger_nav-wrapper{
+position: relative;
+overflow-y: auto;
+height: 100%;
+}
+
+.hamburger_nav-items{
+height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.hamburger_nav-items a{
+margin-top: 40px;
+color: #ecf0f1;
+opacity: 0;
+text-decoration: none;
+font-size: 46px;
+letter-spacing: 3px;
+transition: all 0.3s ease 0s;
+}
+
+.hamburger_nav--items a:first-child{
+margin-top: 0;
+}
+
+.hamburger_nav-wrapper nav a{
+opacity: 1;
+}
+
+.hamburger_nav-wrapper nav a:hover{
+opacity: 1;
+color: #13B3D0;
+}
+
+@media screen and (max-width: 1000px){
+    .mobile_menu{
+        display: inherit;
+    }
+    .nav_links, .med_button{
+        display: none;
+    }
+}
+
+.title_section{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 50px auto;
+  color: #232323;
+}
+
+.content{
+  margin-bottom: 400px;
+}
+
+.subtitle_section{
+  font-size: 24px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0 0 10px 0;
+  color: #232323;
+}
+
+.text_section{
+  font-size: 18px;
+  font-family: 'PT Sans', sans-serif;
+  margin: 0 0 10px 0;
+  color: #232323;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+#left{
+  padding: 0 0 0 10%;
+}
+
+#right{
+  padding: 5% 10%;
+}
