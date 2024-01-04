@@ -140,7 +140,7 @@ header{
 }
 
 .home_video{
-  /*grid-column-start: span 6;*/
+  grid-column-start: span 6;
 }
 
 @keyframes pulse {
