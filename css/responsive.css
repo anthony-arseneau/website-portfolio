@@ -22,7 +22,7 @@
   }
 
   .academic_logo img {
-    height: 90px;
+    height: 80px;
   }
 }
 
@@ -44,7 +44,6 @@
 
   .slider_bg_box {
     width: 300%;
-    aspect-ratio: 16 / 1;
   }
 }
 
