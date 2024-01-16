@@ -21,16 +21,8 @@
     margin-top: 45px;
   }
 
-  .client_section .carousel-control-prev {
-    left: 15%;
-  }
-
-  .client_section .carousel-control-next {
-    right: 15%;
-  }
-
   .academic_logo img {
-    height: 100px;
+    height: 90px;
   }
 }
 
@@ -39,19 +31,6 @@
   .slider_bg_box img {
     -o-object-position: top center;
     object-position: top center;
-  }
-
-  .arrival_section .arrival_bg_box img {
-    -o-object-position: top right;
-    object-position: top right;
-  }
-
-  .client_section .carousel-control-prev {
-    left: 5%;
-  }
-
-  .client_section .carousel-control-next {
-    right: 5%;
   }
 
   .slider_section .detail-box,
@@ -63,13 +42,9 @@
     flex-direction: column-reverse;
   }
 
-  .subscribe_section .box,
-  .arrival_section .box {
-    padding: 75px 25px;
-  }
-
-  .subscribe_section .subscribe_form form button {
-    margin-top: 15px;
+  .slider_bg_box {
+    width: 300%;
+    aspect-ratio: 16 / 1;
   }
 }
 
@@ -88,12 +63,6 @@
     display: flex;
     justify-content: center;
     margin-top: 25px;
-  }
-
-  .client_section .carousel-control-prev,
-  .client_section .carousel-control-next {
-    position: unset;
-    transform: none;
   }
 }
 
