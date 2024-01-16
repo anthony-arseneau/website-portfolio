@@ -12,7 +12,7 @@ body {
 body .carousel-item p {
   color: #fff;
   text-align:justify;
-  text-shadow: 2px 2px 8px #000000;
+  text-shadow: 2px 2px 3px #000;
 }
 
 .layout_padding {
@@ -69,12 +69,12 @@ h2 {
     display: block;
     width: 70px;
     height: 5px;
-    background: #03a6e7;
+    background: #0082b8;
     margin: 10px auto 10px;
 }
 
 .heading_container h2 span {
-  color: #278cd8;
+  color: #0082b8;
 }
 
 .heading_container p {
@@ -93,16 +93,6 @@ a,
 a:hover,
 a:focus {
   text-decoration: none;
-}
-
-/*a:hover,
-a:focus {
-  color: initial;
-}*/
-
-.btn-box a:hover {
-  background-color: transparent;
-  color: #03a6e7;
 }
 
 .btn,
@@ -179,11 +169,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  color: #03a6e7;
-}
-
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link svg, .custom_nav-container .navbar-nav .nav-item.active .nav-link svg {
-  fill: #03a6e7;
+  color: #0082b8;
 }
 
 .custom_nav-container .navbar-toggler {
@@ -275,13 +261,9 @@ a:focus {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 15px;
-    color: #03a6e7;
+    color: #fff;
     line-height: 55px;
-    text-shadow: 2px 2px 8px #000000;
-}
-
-.slider_section .detail-box h1 span {
-  color: #ffffff;
+    text-shadow: 2px 2px 8px #000;
 }
 
 .slider_section .detail-box p {
@@ -299,20 +281,15 @@ p #videos{
 .slider_section .detail-box a {
     display: inline-block;
     padding: 12px 45px;
-    background-color: #03a6e7;
-    border: 1px solid #03a6e7;
-    color: #ffffff;
+    background-color: #0082b8;
+    border: 1px solid #0082b8;
+    color: #fff;
     border-radius: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     margin-top: 10px;
     font-weight: 700;
 }
-
-/*.slider_section .detail-box a:hover {
-  background-color: transparent;
-  color: #03a6e7;
-}*/
 
 .slider_section .img-box img {
   width: 100%;
@@ -341,7 +318,7 @@ p #videos{
 .slider_section .carousel-indicators li.active {
   width: 20px;
   height: 20px;
-  background-color: #03a6e7;
+  background-color: #0082b8;
 }
 
 .slider_bg_box {
@@ -435,9 +412,7 @@ p #videos{
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-.arrival_section {
-    background-color: #d4ced0;
-}
+
 .projects_list_section .option_container {
   position: absolute;
   top: 0;
@@ -488,14 +463,14 @@ p #videos{
 }
 
 .options .option1 {
-  background-color: #03a6e7;
-  border: 1px solid #03a6e7;
+  background-color: #0082b8;
+  border: 1px solid #0082b8;
   color: #ffffff;
 }
 
 .options .option1:hover {
   background-color: #ffffffc0;
-  color: #03a6e7;
+  color: #0082b8;
 }
 
 .options .option2 {
@@ -522,9 +497,9 @@ p #videos{
 .projects_list_section .btn-box a {
   display: inline-block;
   padding: 10px 40px;
-  background-color: #03a6e7;
-  border: 1px solid #03a6e7;
-  color: #ffffff;
+  background-color: transparent;
+  border: 1px solid #0082b8;
+  color: #0082b8;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -532,53 +507,14 @@ p #videos{
 
 .btn-box a:hover {
   background-color: transparent;
-  color: #03a6e7;
+  color: #fff;
+  border-color: #fff;
 }
 
-
-
-.arrival_section .heading_container {
-  color: #002c3e;
-  margin-bottom: 10px;
-}
-
-.arrival_section .box {
-  padding: 120px 45px;
-  position: relative;
-}
-
-.arrival_section .arrival_bg_box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
-
-.arrival_section .arrival_bg_box img {
-    width: 50%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top left;
-    object-position: top left;
-}
-
-.arrival_section a {
-  display: inline-block;
-  padding: 10px 45px;
-  background-color: #03a6e7;
-  border: 1px solid #03a6e7;
-  color: #ffffff;
-  border-radius: 0;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.arrival_section a:hover {
-  background-color: transparent;
-  /*color: #03a6e7;*/
+#projects-btn a:hover {
+  background-color: #0082b8;
+  color: #fff;
+  border-color: #0082b8;
 }
 
 .skill_section .box {
@@ -830,7 +766,7 @@ li.nav-item ul li a {
 }
 
 li.nav-item ul li a:hover, li.nav-item ul li a:focus {
-    color: #03a6e7;
+    color: #0082b8;
 }
 
 .inner_page_head {
