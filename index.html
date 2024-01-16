@@ -1,79 +1,484 @@
 <!DOCTYPE html>
 <html>
-    <!-- Head section -->
-    <head>
-        <title>Anthony's Website</title>
-        <meta charset="utf-8">
-        <link rel="shortcut icon" type="x-icon" href="media/images/icon.png">
-        <link rel="stylesheet" href="styles.css">
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
-    </head>
-    <!-- Body section-->
-    <body>
-        <div class="home">
-            <header>
-                <p class="logo"><a href="index.html">Anthony Arseneau</a></p>
-                <nav>
-                    <ul class="nav_links">
-                        <li><a href="index.html" class="active">Home</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="#">About</a></li>
-                    </ul>
-                </nav>
-                <class class="cta" href="#"><button class="med_button">Contact</button></class>
-                <div class="mobile_menu">
-                    <input id="toggle" type="checkbox"/>
-                    <label class="hamburger" for="toggle">
-                        <div class="hamburger_top"></div>
-                        <div class="hamburger_meat"></div>
-                        <div class="hamburger_bottom"></div>
-                    </label>
+   <head>
+      <!-- Basic -->
+      <meta charset="utf-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <!-- Mobile Metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <!-- Site Metas -->
+      <meta name="keywords" content="computer science, programming, software development, web development, data science, algorithms, cryptography, cybersecurity, portfolio, projects" />
+      <meta name="description" content="A portfolio showcasing expertise in computer science, programming, software development, algorithms, data structures, and various technologies such as web development, data science, and cryptography." />
+      <meta name="author" content="Anthony Arseneau" />
+      <link rel="shortcut icon" href="media/images/favicon.png">
+      <title>Anthony's Website</title>
+      <!-- bootstrap core css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+      <!-- font awesome style -->
+      <link href="css/font-awesome.min.css" rel="stylesheet" />
+      <!-- Custom styles for this template -->
+      <link href="css/style.css" rel="stylesheet" />
+      <!-- responsive style -->
+      <link href="css/responsive.css" rel="stylesheet" />
+   </head>
+   <body>
+      <div class="hero_area">
+         <!-- header section strats -->
+         <header class="header_section">
+            <div class="container">
+               <nav class="navbar navbar-expand-lg custom_nav-container ">
+                  <a class="navbar-brand" href="index.html"><img width="40" src="media/images/favicon.png" alt="Website logo" /></a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class=""> </span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                    <div class="hamburger_nav">
-                        <div class="hamburger_nav-wrapper">
-                            <nav class="hamburger_nav-items">
-                                <a href="index.html">Home</a>
-                                <a href="projects.html">Projects</a>
-                                <a href="#">About</a>
-                            </nav>
+                     <ul class="navbar-nav">
+
+                        <li class="nav-item active">
+                           <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="about.html">About</a>
+                        </li>
+
+                        <!--
+                        <li class="nav-item dropdown">
+                           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Pages <span class="caret"></span></a>
+                           <ul class="dropdown-menu">
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="testimonial.html">Testimonial</a></li>
+                           </ul>
+                        </li>
+                        -->
+
+                        <li class="nav-item">
+                           <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+
+                     </ul>
+
+                  </div>
+               </nav>
+            </div>
+         </header>
+         <!-- end header section -->
+
+         <!-- slider section -->
+         <section class="slider_section ">
+            <div class="slider_bg_box">
+               <img src="media/images/profile2.jpg" alt="Profile Picture">
+            </div>
+            <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="container ">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-6 ">
+                              <div class="detail-box">
+                                 <h1>
+                                    <span>
+                                    Anthony Arseneau
+                                    </span>
+                                    <br>
+                                    Computer Science Student
+                                 </h1>
+                                 <p>
+                                    Welcome to my portfolio! I'm Anthony Arseneau, a Computer Science student at Mount Allison University, 
+                                    passionate about leveraging technology to create innovative solutions and explore the ever-evolving world of software development.
+                                 </p>
+                                 <div class="btn-box">
+                                    <a href="about.html" class="btn1">
+                                    About
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
                         </div>
-                    </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item ">
+                     <div class="container ">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-6 ">
+                              <div class="detail-box">
+                                 <h1>
+                                    <span>
+                                    Tech Projects Showcase
+                                    </span>
+                                 </h1>
+                                 <p id="videos">
+                                    <video muted autoplay loop src="media/videos/arc_reactor_v2.mp4" width="255"></video>
+                                    <video muted autoplay loop src="media/videos/baller.mp4" width="255"></video>
+                                    <!-- Explore my tech endeavors! From crafting a self-leveling ball platform with an Arduino to creating 
+                                    a Raspberry Pi self-hosting web development, my portfolio showcases a diverse array of innovative 
+                                    software projects that blend creativity and technical expertise. -->
+                                 </p>
+                                 <div class="btn-box">
+                                    <a href="projects.html" class="btn1">
+                                    Projects
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="container ">
+                        <div class="row">
+                           <div class="col-md-7 col-lg-6 ">
+                              <div class="detail-box">
+                                 <h1>
+                                    <span>
+                                    Get in touch
+                                    </span>
+                                    <br>
+                                    Reach out and connect
+                                 </h1>
+                                 <p>
+                                    Tech enthusiast seeking opportunities! With a solid Computer Science background and a diverse portfolio, 
+                                    I bring innovation, adaptability, and a hunger to learn. Let's explore how I can contribute to your team.
+                                 </p>
+                                 <div class="btn-box">
+                                    <a href="contact.html" class="btn1">
+                                    Contact
+                                    </a>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="container">
+                  <ol class="carousel-indicators">
+                     <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+                     <li data-target="#customCarousel1" data-slide-to="1"></li>
+                     <li data-target="#customCarousel1" data-slide-to="2"></li>
+                  </ol>
+               </div>
+            </div>
+         </section>
+         <!-- end slider section -->
+      </div>
 
-                </div>
-            </header>
+      <!-- skills section -->
+      <section class="skill_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h2>
+                  Skills
+               </h2>
+            </div>
+            <div class="row">
+               <div class="col-md-4">
+                  <div class="box ">
+                     <div class="img-box">
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="2" stroke-linejoin="miter">
+                           <path d="M9,3H8A3,3,0,0,0,5,6V9a3,3,0,0,1-3,3H2a3,3,0,0,1,3,3v4a3,3,0,0,0,3,3H9" fill="none"></path>
+                           <path d="M15,3h1a3,3,0,0,1,3,3V9a3,3,0,0,0,3,3h0a3,3,0,0,0-3,3v4a3,3,0,0,1-3,3H15" fill="none"></path>
+                        </svg>
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Programming
+                        </h5>
+                        <p>
+                           Proficient in Java, Python, and C++. Also experienced with Bash shell scripting, C, HTML, CSS, and Javascript.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box ">
+                     <div class="img-box">
+                        <svg width="800px" height="800px" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M9.5 14.5H13.5C14.0523 14.5 14.5 14.0523 14.5 13.5V1.5C14.5 0.947715 14.0523 0.5 13.5 0.5H9.5C8.94772 0.5 8.5 0.947716 8.5 1.5V13.5C8.5 14.0523 8.94772 14.5 9.5 14.5ZM9.5 14.5H4M6.5 11.5V14.5M8.5 5.5H14.5M10 11.5H13M1.5 3.5H8.5V11.5H1.5C0.947715 11.5 0.5 11.0523 0.5 10.5V4.5C0.5 3.94772 0.947715 3.5 1.5 3.5Z" stroke="#ffffff" fill="none" />
+                        </svg>
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Technical Tools
+                        </h5>
+                        <p>
+                           Agile in Unix, GitHub, and well-versed in using tools such as VS Code for development. Knowledgeable in Blender, Fusion360, Arduino, Raspberry Pi for diverse projects.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <div class="box ">
+                     <div class="img-box">
+                        <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="miter">
+                           <circle cx="10" cy="6" r="4" fill="none"></circle>
+                           <path d="M18,22a7.89,7.89,0,0,0-8-8,7.89,7.89,0,0,0-8,8Z" fill="none"></path>
+                           <path d="M16.83,3.17a4.13,4.13,0,0,1,.86,1.27,4.08,4.08,0,0,1,0,3.12,4.13,4.13,0,0,1-.86,1.27" fill="none"></path>
+                           <path d="M21.8,19.86A11.12,11.12,0,0,0,18,13.5" fill="none"></path></svg>
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Collaboration
+                        </h5>
+                        <p id="add-bottom-margin40">
+                           Fostering teamwork, reliable and consistent, committed to lifelong learning, oral and written communication
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- end skills section -->
 
-            <!-- Home content -->
-            <section class="home_content">
-                <div class="home_text">
-                    <p class="home_subtitle">Anthony Francis Arseneau</p>
-                    <h1>Computer Science Student</h1>
-                    <a href="projects.html"><button class="med_button">Projects</button></a>
-                </div>
-                <div class="home_video">
-                    <video width="400" controls autoplay muted loop><source src="media/videos/arc_reactor.mp4" type="video/mp4"></video>
-                </div>
-            </section>
-        </div>
-        <div class="content">
-            <div class="row" class="first_section">
-                <h2 class="title_section">
-                    <span style="color:rgba(165, 0, 165, 0.76);">public class</span> Greetings { <br>
-                    &emsp;<span style="color:rgb(165, 0, 165, 0.76);">public static void</span> main(String[] <span style="color:rgb(129, 97, 61, 0.76);">args</span>){<br>
-                    &emsp;&emsp;System.<span style="color:rgba(0, 0, 255, 0.76)">out</span>.println(<span style="color:rgba(0, 0, 255, 0.76)">"Welcome!"</span>);<br>
-                    &emsp;}<br>
-                    }
-                    </h2>
-                <div class="column" id="left">
-                  <img class="content_photo" src="media/images/AnthonyProfile.jpg">
-                </div>
-                <div class="column" id="right">
-                  <h2 class="subtitle_section">Welcome!</h2>
-                  <p class="text_section">Hi, my name is Anthony Arseneau. I am a 20 year old computer
-                      science student at Mount Allison. 
-                  </p>
-                </div>
-              </div>
-        </div>
-        <script src="video.js"></script>
-    </body>
+      <!-- academic section -->
+      <section class="academic_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h2>
+                  Academics
+               </h2>
+            </div>
+            <div class="academic_logo">
+               <a href="https://mta.ca/" target="_blank"><img src="media/images/mount_allison_logo.png" alt="Mount Allison University logo"></a>
+               <p>Third year Bachelor of Science majoring in Computer Science with a minor in Mathematics</p>
+            </div>
+            <div class="academic_logo">
+               <a href="https://esn.nbed.nb.ca/" target="_blank"><img src="media/images/esn_logo.png" alt="ESN logo"></a>
+               <p>High school diploma</p>
+            </div>
+         </div>
+      </section>
+      <!-- end academic section -->
+      
+      <!-- projects section -->
+      <section class="projects_list_section layout_padding">
+         <div class="container">
+            <div class="heading_container heading_center">
+               <h2>
+                  My <span>projects</span>
+               </h2>
+            </div>
+            <div class="row">
+
+
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="projects.html#baller" class="option1">
+                           Project page
+                           </a>
+                           <a href="https://github.com/anthony-arseneau/balancing-automated-leveraging-and-leveling-electronic-robot" class="option2">
+                           GitHub
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="media/images/baller.png" alt="Self levelling platform project">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           B.A.L.L.E.R.
+                        </h5>
+                        <h6>
+                           ~40h
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="projects.html#web-hosting" class="option1">
+                           Project page
+                           </a>
+                           <a href="https://github.com/anthony-arseneau/website-portfolio" class="option2">
+                           GitHub
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="media/images/web_hosting.png" alt="Web hosting image">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Self Web Hosting
+                        </h5>
+                        <h6>
+                           ~40h
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="projects.html#arc-v2" class="option1">
+                           Project page
+                           </a>
+                           <a href="https://github.com/anthony-arseneau/iron-man-arc-reactor" class="option2">
+                           GitHub
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="media/images/arc_reactor_v2.png" alt="Arc reactor project">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Arc Reactor V2
+                        </h5>
+                        <h6>
+                           ~10h
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="projects.html#video-game" class="option1">
+                           Project page
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="media/images/video_game.png" alt="Video game project">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Video Game
+                        </h5>
+                        <h6>
+                           ~5h
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="projects.html#arc-v1" class="option1">
+                           Project page
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="media/images/arc_reator_v1.png" alt="Arc reactor project">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Arc Reactor V1
+                        </h5>
+                        <h6>
+                           ~8h
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="col-sm-6 col-md-4 col-lg-4">
+                  <div class="box">
+                     <div class="option_container">
+                        <div class="options">
+                           <a href="projects.html#display-board" class="option1">
+                           Project page
+                           </a>
+                           <a href="https://github.com/anthony-arseneau/biology-project" class="option2">
+                              GitHub
+                           </a>
+                        </div>
+                     </div>
+                     <div class="img-box">
+                        <img src="media/images/biology_project.png" alt="Biology project">
+                     </div>
+                     <div class="detail-box">
+                        <h5>
+                           Display Board
+                        </h5>
+                        <h6>
+                           ~12h
+                        </h6>
+                     </div>
+                  </div>
+               </div>
+
+            </div>
+            <div class="btn-box">
+               <a href="projects.html">
+               View All Projects
+               </a>
+            </div>
+         </div>
+      </section>
+      <!-- end projects section -->
+      
+      <!-- footer start -->
+      <footer>
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                   <div class="full">
+                      <div class="logo_footer">
+                        <a href="https://anthonyarseneau.ca"><img width="40" src="media/images/favicon.png" alt="Website logo" /></a>
+                      </div>
+                      <div class="information_f">
+                        <p><strong>Location:</strong> New Brunswick, Canada</p>
+                        <p><strong>Email:</strong> anthonyarseneau146@gmail.com</p>
+                        <p><strong>GitHub:</strong> <a href="https://github.com/anthony-arseneau">https://github.com/anthony-arseneau</a></p>
+                        <p><strong>Last edited:</strong> Jan 15, 2024</p>
+                      </div>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="row"> 
+                  <div class="col-md-6">
+                     <div class="row">
+                        <div class="col-md-6">
+                     <div class="widget_menu">
+                        <h3>Menu</h3>
+                        <ul>
+                           <li><a href="index.html">Home</a></li>
+                           <li><a href="about.html">About</a></li>
+                           <li><a href="projects.html">Projects</a></li>
+                           <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                     </div>
+                  </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!-- footer end -->
+      <div class="cpy_">
+         <p class="mx-auto">
+            Made by <a href="https://anthonyarseneau.ca" target="_blank">myself</a>.
+         </p>
+      </div>
+      <!-- jQery -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <!-- popper js -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap js -->
+      <script src="js/bootstrap.js"></script>
+      <!-- custom js -->
+      <script src="js/custom.js"></script>
+   </body>
 </html>
