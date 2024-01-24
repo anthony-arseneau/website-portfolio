@@ -10,12 +10,14 @@ body {
 }
 
 body .carousel-item p {
-  color: #212529;
+  color: #fff;
   text-align:justify;
-  padding: 7px;
-  background-color: #ffffff50;
-  border-radius: 10px;
-  box-shadow: 2px 2px 12px #ffffff50;
+  padding: 15px;
+  background-color: #272928d6;
+  border-radius: 15px;
+  border-width: 1px;
+  border-color: #444846d6;
+  box-shadow: 2px 2px 12px #272928d6;
 }
 
 .layout_padding {
