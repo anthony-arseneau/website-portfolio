@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@font-face {
+  font-family: Hacked;
+  src: url(../fonts/Hacked-KerX.ttf);
+}
 * {
   box-sizing: border-box;
 }
@@ -15,8 +18,6 @@ body .carousel-item p {
   padding: 15px;
   background-color: #272928d6;
   border-radius: 15px;
-  border-width: 1px;
-  border-color: #444846d6;
   box-shadow: 2px 2px 12px #272928d6;
 }
 
@@ -24,30 +25,10 @@ body .carousel-item p {
   padding: 70px 0;
 }
 
-.layout_padding2 {
-  padding: 75px 0;
-}
-
-.layout_padding2-top {
-  padding-top: 75px;
-}
-
-.layout_padding2-bottom {
-  padding-bottom: 75px;
-}
-
-.layout_padding-top {
-  padding-top: 90px;
-}
-
-.layout_padding-bottom {
-  padding-bottom: 90px;
-}
-
-h1,
+/*
 h2 {
   font-family: 'Playfair Display', serif;
-}
+}*/
 
 .heading_container {
   display: -webkit-box;
@@ -130,14 +111,26 @@ a:focus {
     padding: 15px 0;
 }
 
+.container h3 {
+  text-align: left;
+}
+
+.courses {
+  padding: 0 50px 0 50px;
+}
+
+.courses h2 {
+  padding-left: 20px;
+}
+
 .header_section .container-fluid {
   padding-right: 25px;
   padding-left: 25px;
 }
-
+/*
 .navbar-brand {
   font-family: 'Playfair Display', serif;
-}
+}*/
 
 .navbar-brand span {
   font-weight: bold;
@@ -266,9 +259,8 @@ a:focus {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 15px;
-  color: #fff;
+  color: #353836;
   line-height: 55px;
-  text-shadow: 2px 2px 8px #000;
 }
 
 .slider_section .detail-box h1 span{
@@ -286,7 +278,7 @@ a:focus {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .slider_section .detail-box a {
@@ -575,7 +567,7 @@ a:focus {
 
 /* projects section */
 .wrapper {
-  padding-top: 20px;
+  padding: 20px 20px 0px 20px;
   display: contents;
   text-align: justify;
 }
@@ -629,7 +621,9 @@ a:focus {
 .footer_section .footer-logo {
   font-weight: 600;
   margin-bottom: 20px;
+  /*
   font-family: 'Playfair Display', serif;
+  */
   text-align: left;
 }
 
@@ -747,7 +741,9 @@ a:focus {
     margin-bottom: 15px;
     font-size: 2.5rem;
     font-weight: bold;
+    /*
     font-family: 'Playfair Display', serif;
+    */
 }
 
 li.nav-item ul {
