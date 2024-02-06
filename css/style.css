@@ -352,16 +352,16 @@ a:focus {
 }
 
 .projects_list_section .box {
-    position: relative;
-    margin-top: 25px;
-    padding: 35px 35px;
-    background-color: #f7f8f9;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    overflow: hidden;
-    box-shadow: 10px 10px 10px -10px rgba(0,0,0,.8);
-    border: solid #002c3e 10px;
-    border-radius: 5px;
+  position: relative;
+  margin-top: 25px;
+  padding: 35px 35px;
+  background-color: #f7f8f9;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px -10px rgba(0,0,0,.8);
+  border: solid #002c3e 10px;
+  border-radius: 5px;
 }
 
 .projects_list_section .box .img-box {
