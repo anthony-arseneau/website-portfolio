@@ -153,7 +153,6 @@ a:focus {
     padding: 5px 20px;
     color: #131313;
     text-align: center;
-    text-transform: uppercase;
     border-radius: 5px;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -360,7 +359,7 @@ a:focus {
   transition: all .3s;
   overflow: hidden;
   box-shadow: 10px 10px 10px -10px rgba(0,0,0,.8);
-  border: solid #002c3e 10px;
+  border: solid #002c3e 5px;
   border-radius: 5px;
 }
 
